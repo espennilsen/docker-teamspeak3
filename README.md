@@ -8,7 +8,7 @@ Usage
 
 To simply use the latest stable version, run
 
-    docker run -d -p 9987:9987/udp -p 10011:10011 -p 30033:30033 --name=ts3-server aheil/teamspeak3-server
+    docker run -d -p 9987:9987/udp -p 10011:10011 -p 30033:30033 --name=ts3-server espennilsen/teamspeak3-server
 
 where the default server ports will be exposed on your host machine. If you want to serve up multiple TeamSpeak3 servers or just use an alternate port, change the host-side port mapping such as
 
@@ -24,7 +24,7 @@ If there is no `ts3server.ini` present in the data directory, the server will be
 
 If you are starting the server for the first time, you need the Admin-Token:
 
-    docker run -d -p 9987:9987/udp -p 10011:10011 -p 30033:30033 --name=ts3-server aheil/teamspeak3-server
+    docker run -d -p 9987:9987/udp -p 10011:10011 -p 30033:30033 --name=ts3-server espennilsen/teamspeak3-server
     docker logs -f ts3-server
 
 There are two important sections in the logfiles:
@@ -76,3 +76,6 @@ For example, to use a specific version:
 
 Note: a list of valid versions is available [here](http://www.server-residenz.com/tools/ts3versions.json) or you may use [ts3version@github](https://github.com/andreasheil/ts3versions) by your self.
 
+Credits
+--------
+This is a fork of [andreasheil\docker-teamspeak3](https://github.com/andreasheil/docker-teamspeak3)
