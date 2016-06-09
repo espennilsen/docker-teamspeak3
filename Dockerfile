@@ -1,6 +1,6 @@
 FROM debian:wheezy
 
-MAINTAINER aheil
+MAINTAINER espennilsen
 
 #ENV DEBIAN_FRONTEND noninteractive
 ENV TS_VERSION LATEST
