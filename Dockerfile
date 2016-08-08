@@ -3,6 +3,7 @@ FROM debian:wheezy
 MAINTAINER espennilsen
 
 #ENV DEBIAN_FRONTEND noninteractive
+ENV LANG en_US.UTF-8
 ENV TS_VERSION LATEST
 
 RUN apt-get update \
